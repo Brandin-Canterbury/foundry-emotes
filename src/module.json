@@ -25,6 +25,6 @@
   "minimumCoreVersion": "9.0",
   "scripts": ["scripts/emotes.js", "scripts/ui.js"],
   "styles": ["styles/styles.css"],
-  "manifest": "https://brandin-canterbury.github.io/foundry-emotes/src/module.json",
-  "download": "https://github.com/Brandin-Canterbury/foundry-emotes/releases/download/latest/module.json"
+  "manifest": "https://github.com/Brandin-Canterbury/foundry-emotes/releases/download/latest/module.json",
+  "download": "https://github.com/Brandin-Canterbury/foundry-emotes/releases/download/latest/module.zip"
 }
