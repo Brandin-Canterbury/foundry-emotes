@@ -1,0 +1,26 @@
+﻿<form>
+    <div id="drop-area">
+        <p>Drag and drop an action, item, or spell here</p>
+        <div id="action-preview">
+            {{#if action.icon}}
+            <img src="{{action.icon}}" alt="{{action.name}}" style="width: 24px; height: 24px;">
+            <span style="font-size: 16px;">{{action.name}}</span>
+            {{/if}}
+        </div>
+    </div>
+    <ul id="action-items-list">
+        {{#each action.items as |item index|}}
+        <li class="item" data-index="{{index}}">
+            <span class="handle"><i class="fas fa-grip-vertical"></i></span>
+            <select name="items.{{index}}.type">
+                <option value="speech" {{selected item.type "speech"}}>Speech</option>
+                <option value="emote" {{selected item.type "emote"}}>Emote</option>
+            </select>
+            <input type="text" name="items.{{index}}.value" value="{{item.value}}">
+            <button type="button" class="item-delete" data-index="{{index}}"><i class="fas fa-trash"></i></button>
+        </li>
+        {{/each}}
+    </ul>
+    <button type="button" class="item-add"><i class="fas fa-plus"></i> Add Item</button>
+    <button type="submit"><i class="fas fa-save"></i> Save Action</button>
+</form>
