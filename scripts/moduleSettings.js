@@ -1,10 +1,10 @@
-﻿class ActionSequenceConfig extends FormApplication {
+﻿class ActionEmotesConfig extends FormApplication {
     static get defaultOptions() {
         return mergeObject(super.defaultOptions, {
-            id: 'action-sequence-config',
-            title: 'Action Sequence Configuration',
-            template: 'modules/action-sequence/templates/settings.html',
-            classes: ['action-sequence'],
+            id: 'action-emotes-config',
+            title: 'Action Emotes Configuration',
+            template: 'modules/action-emotes/templates/settings.html',
+            classes: ['action-emotes'],
             width: 500,
             closeOnSubmit: true
         });
@@ -12,7 +12,7 @@
 
     getData() {
         // Fetch the current settings data to populate the form
-        const settingsData = game.settings.get('action-sequence', 'settingsData');
+        const settingsData = game.settings.get('action-emotes', 'settingsData');
         return {
             globalDelay: settingsData.globalDelay,
             actions: settingsData.actions

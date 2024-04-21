@@ -1,9 +1,9 @@
 ﻿Hooks.once('init', function() {
-    console.log('Action Sequence | Initializing Action Sequence Module');
+    console.log('Action Emotes | Initializing Action Sequence Module');
 
     // Register settings
-    game.settings.register('action-sequence', 'settingsData', {
-        name: 'Action Settings',
+    game.settings.register('action-emotes', 'settingsData', {
+        name: 'Action Emotes',
         scope: 'world',
         config: false,
         default: { globalDelay: 1000, actions: [] },
@@ -12,13 +12,13 @@
 });
 
 Hooks.on('preCreateChatMessage', async function(chatMessage, options, userId) {
-    const actions = game.settings.get('action-sequence', 'settingsData').actions;
+    const actions = game.settings.get('action-emotes', 'settingsData').actions;
     const action = actions.find(a => a.actionId === chatMessage.data.actionId);
 
     if (action) {
         for (const item of action.items) {
             await performAction(chatMessage, item);
-            await wait(game.settings.get('action-sequence', 'settingsData').globalDelay);
+            await wait(game.settings.get('action-emotes', 'settingsData').globalDelay);
         }
     }
 });

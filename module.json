@@ -13,11 +13,12 @@
       "discord": "thephoenix777"
     }
   ],
-  "scripts": [
-    "scripts/emotes.js",
-    "scripts/ui.js"
-  ],
   "styles": [
     "styles/styles.css"
+  ],
+  "esmodules": [
+    "scripts/action-emotes.js",
+    "scripts/action-form.js",
+    "scripts/moduleSettings.js"
   ]
 }

@@ -8,8 +8,8 @@
         return mergeObject(super.defaultOptions, {
             id: 'action-form',
             title: this.action.actionId ? 'Edit Action' : 'New Action',
-            template: 'modules/action-sequence/templates/action-form.html',
-            classes: ['action-sequence'],
+            template: 'modules/action-emotes/templates/action-form.html',
+            classes: ['action-emotes'],
             width: 400,
             closeOnSubmit: false
         });
