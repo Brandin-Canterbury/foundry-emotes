@@ -1,4 +1,5 @@
 ﻿{
+  "id": "action-emotes",
   "name": "action-emotes",
   "title": "Action Emotes Module",
   "description": "Links roll tables to actions to determine emotes.",
