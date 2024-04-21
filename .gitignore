@@ -5,7 +5,7 @@ riderModule.iml
 /_ReSharper.Caches/
 # User-specific files
 .idea/
-
+*.zip
 # Generated files
 *.user
 *.suo
