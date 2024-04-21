@@ -1,0 +1,11 @@
+﻿{
+  "name": "action-emotes-module",
+  "title": "Action Emotes Module",
+  "description": "Links roll tables to actions to determine emotes.",
+  "version": "0.1.0",
+  "author": "Brandin Canterbury",
+  "compatibleCoreVersion": "9.0",
+  "minimumCoreVersion": "9.0",
+  "scripts": ["scripts/emotes.js", "scripts/ui.js"],
+  "styles": ["styles/styles.css"]
+}

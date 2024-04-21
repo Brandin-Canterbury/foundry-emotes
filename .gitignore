@@ -1,0 +1,35 @@
+bin/
+obj/
+/packages/
+riderModule.iml
+/_ReSharper.Caches/
+# User-specific files
+.idea/
+
+# Generated files
+*.user
+*.suo
+
+# Rider project-specific cache files
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf/
+
+# Rider global configuration files
+.idea/**/vcs.xml
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+
+# Other Rider cache files
+*.idea/modules.xml
+*.idea/*.iml
+.idea/.idea.RiderProject/.idea
+.idea/.idea.RiderProject/.idea/workspace.xml
+.idea/.idea.RiderProject/.idea/tasks.xml
+.idea/.idea.RiderProject/.idea/vcs.xml
